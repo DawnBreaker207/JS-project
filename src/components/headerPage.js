@@ -13,7 +13,7 @@ const headerPage = () => {
           /
           <a class="header__nav-link" href="/login">Login</a>
         </li>
-        <li><a id="logout">Logout</a></li>
+        <li><a href="" id="logout">Logout</a></li>
       </ul>
     </header>
 

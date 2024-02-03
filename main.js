@@ -11,6 +11,8 @@ import detailPro from "./src/utils/detailPro";
 import handleProductList from "./src/handles/handleProductList";
 import handleRegister from "./src/handles/handleRegister";
 import handleLogin from "./src/handles/handleLogin";
+import adminPage from "./src/pages/admin/admin";
+// import handleLogout from "./src/handles/handleLogout";
 
 const app = document.getElementById("app");
 
@@ -33,6 +35,25 @@ router.on("/login", () => render(app, loginPage), {
   after() {
     handleLogin();
   },
+});
+
+router.on("/logout", () => {
+  // sessionStorage.removeItem("user");
+  // console.log("Remove");
+  // setTimeout(() => {
+  //   router.navigate("/");
+  // }, 3000);
+  handleLogout();
+});
+// Admin
+router.on("/admin", () => render(app, adminPage), {
+  // before() {
+  //   if (data.user.role === "admin") {
+  //     router.navigate("/admin");
+  //   } else {
+  //     router.navigate("/");
+  //   }
+  // },
 });
 
 // Router params
