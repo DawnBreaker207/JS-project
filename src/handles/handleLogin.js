@@ -18,12 +18,12 @@ const handleLogin = () => {
         const { data } = await api.post("/login", user);
         // Session role
         if (data) {
-          console.log(data)
-          if(data.user.role == "admin"){
-            console.log("In")
+          console.log(data);
+          if (data.user.role === "admin") {
+            console.log("In");
             router.navigate("/admin");
-          }else{
-            router.navigate("/")
+          } else {
+            router.navigate("/");
           }
 
           sessionStorage.setItem("user", JSON.stringify(data));

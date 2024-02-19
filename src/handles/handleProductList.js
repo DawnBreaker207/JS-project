@@ -10,13 +10,13 @@ const handleProductList = async () => {
       .map((item) => {
         return /*html*/ `
             
-            <div class="product-card">
-                <div class="product-thumbnail">
-                  <a href="/detail/${item.id}"><img src="${item.thumbnail}" class="product-thumb__img"/></a>
+            <div class="product border-2m m-2">
+                <div class="product-thumbnail h-60">
+                  <a class="max-w-full h-screen" href="/detail/${item.id}"><img src="${item.thumbnail}" class="w-full h-full"/></a>
                 </div>
-                  <div class="product-title">
-                  <h3 class="product__title">${item.title}</h3>
-                  <p class="product__price">Price: ${item.price} $</p>
+                  <div class="my-4">
+                  <h3 class="text-3xl ">${item.title}</h3>
+                  <p class="font-normal text-lg">Price: ${item.price} $</p>
                 </div>
             </div>
             `;

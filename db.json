@@ -33,6 +33,14 @@
       "address": "",
       "phoneNumder": "",
       "id": 5
+    },
+    {
+      "email": "admin@lmao.com",
+      "password": "$2a$10$L7t2b/z5R3DxFmtVy2ar0eulVNx3lcR66Oj0S1wmn6s/R.9naTw8u",
+      "role": "admin",
+      "address": "",
+      "phoneNumder": "",
+      "id": 6
     }
   ],
   "products": [
@@ -589,10 +597,10 @@
       ]
     },
     {
-      "title": "Iphone 13 Pro Max",
-      "description": "New Iphone model of 2021",
-      "price": 599,
-      "id": 31
+      "id": 31,
+      "title": "423432",
+      "price": "42343242",
+      "thumbnail": {}
     }
   ]
 }

@@ -19,9 +19,10 @@
     "dev": "vite",
     "build": "vite build",
     "server": "json-server --watch db.json -m ./node_modules/json-server-auth --port 3000",
-    "start": "concurrently \"npm run dev\" \"npm run server\""
+    "start": "concurrently \"npm run dev\" \"npm run server\" \"npx tailwindcss -i ./src/input.css -o ./src/output.css --watch\""
   },
   "devDependencies": {
+    "tailwindcss": "^3.4.1",
     "vite": "^5.0.10"
   },
   "dependencies": {

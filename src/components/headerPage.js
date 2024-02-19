@@ -1,19 +1,22 @@
 const headerPage = () => {
   return /*html*/ `
-    <header class="header">
-      <ul class="header-nav font-24">
-        <li class="header__nav-item">
-          <a class="header__nav-link"href="/">Home</a>
+    <header class="container">
+      <ul class="flex justify-center my-10 gap-7 font-bold text-2xl">
+        <li class="">
+          <a class=""href="/">Home</a>
         </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="/about">About</a>
+        <li class="">
+          <a class=""href="/product">Product</a>
         </li>
-        <li class="header__nav-item ">
-          <a class="header__nav-link" href="/register">Register</a> 
+        <li class="">
+          <a class="" href="/about">About</a>
+        </li>
+        <li class=" ">
+          <a class="" href="/register">Register</a> 
           /
-          <a class="header__nav-link" href="/login">Login</a>
+          <a class="" href="/login">Login</a>
         </li>
-        <li><a href="" id="logout">Logout</a></li>
+        <li><a href="/logout" id="logout">Logout</a></li>
       </ul>
     </header>
 
